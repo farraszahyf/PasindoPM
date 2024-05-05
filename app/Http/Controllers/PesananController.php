@@ -34,7 +34,7 @@ class PesananController extends Controller
         Pesanan::create($validatedData);
     
         // Membuat URL untuk aplikasi WhatsApp dengan nomor yang dituju
-        $whatsappNumber = '6282245166222'; // Nomor WhatsApp dengan kode negara Indonesia (+62)
+        $whatsappNumber = '6285334709695'; // Nomor WhatsApp dengan kode negara Indonesia (+62)
         $whatsappMessage = urlencode('Halo, saya tertarik dengan pesanan buku.'); // Pesan awal
         $whatsappURL = 'https://api.whatsapp.com/send?phone=' . $whatsappNumber . '&text=' . $whatsappMessage;
     
