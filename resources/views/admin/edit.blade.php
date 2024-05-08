@@ -51,22 +51,22 @@
                 @csrf
                 <div class="form-group col-md-6">
                     <label for="nama" class="form-label">Nama Lengkap</label>
-                    <input type="text" name="nama" id="nama" class="form-control" value="{{$pesanan->nama}}">
+                    <input type="text" name="nama" id="nama" class="form-control" value="{{$pesanan->nama}} disabled">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" value="{{$pesanan->email}}">
+                    <input type="email" name="email" id="email" class="form-control" value="{{$pesanan->email}} disabled">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="sekolah" class="form-label">Sekolah</label>
-                    <input type="text" name="sekolah" id="sekolah" class="form-control" value="{{$pesanan->sekolah}}">
+                    <input type="text" name="sekolah" id="sekolah" class="form-control" value="{{$pesanan->sekolah}} disabled">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="tanggal" class="form-label">Tanggal Pemesanan</label>
-                    <input type="date" name="tanggal" id="tanggal" class="form-control" value="{{$pesanan->tanggal}}">
+                    <input type="date" name="tanggal" id="tanggal" class="form-control" value="{{$pesanan->tanggal}} disabled">
                 </div>
 
                 <div class="form-group col-md-6">
