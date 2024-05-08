@@ -49,8 +49,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link active" href="{{ route('home') }}">Beranda</a></li>
-          <li><a class="nav-link" href="{{ route('stok') }}">Stok Produk</a></li>
+          <li><a class="nav-link" href="{{ route('home') }}">Beranda</a></li>
+          <li><a class="nav-link active" href="{{ route('stok') }}">Stok Produk</a></li>
           <li><a class="nav-link" href="{{ route('about') }}">Tentang Kami</a></li>
           <li><a class="nav-link" href="{{ route('contact') }}">Kontak</a></li>
         </ul>
