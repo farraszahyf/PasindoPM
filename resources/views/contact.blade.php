@@ -83,18 +83,30 @@
           <div class="mb-3">
             <label for="name" class="form-label">Nama</label>
             <input type="text" class="form-control" id="name" name="name" required>
+            @error('name')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
+            @error('email')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
           </div>
           <div class="mb-3">
             <label for="sekolah" class="form-label">Sekolah</label>
             <input type="text" class="form-control" id="sekolah" name="sekolah">
+            @error('sekolah')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
           </div>
           <div class="mb-3">
             <label for="pesan" class="form-label">Pesan</label>
             <textarea class="form-control" id="pesan" name="pesan" rows="3"></textarea>
+            @error('pesan')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
           </div>
           <div class="mb-3">
             <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>

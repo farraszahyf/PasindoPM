@@ -16,10 +16,18 @@ class ContactController extends Controller
             'email' => 'required|email',
             'sekolah' => 'required|max:255',
             'pesan' => 'required',
+        ], [
+            'name.required' => 'Nama harus diisi.',
+            'name.max' => 'Nama tidak boleh lebih dari 255 karakter.',
+            'email.required' => 'Email harus diisi.',
+            'email.email' => 'Email harus berupa format email yang valid.',
+            'sekolah.required' => 'Nama sekolah harus diisi.',
+            'sekolah.max' => 'Nama sekolah tidak boleh lebih dari 255 karakter.',
+            'pesan.required' => 'Pesan harus diisi.',
         ]);
-
+    
         Contact::create($validatedData);
-
+    
         // Membuat URL untuk aplikasi WhatsApp dengan nomor yang dituju
         $whatsappNumber = '6285334709695'; // Nomor WhatsApp dengan kode negara Indonesia (+62)
         $whatsappMessage = urlencode('Halo, saya ingin bertanya'); // Pesan awal
